@@ -15,6 +15,8 @@ class DbConnect:
 
         except Exception as e:
             return None
+class GymMemberManager(DbConnect):
+    pass
 
 connection_istance = DbConnect()
 connection_istance.get_connection()
